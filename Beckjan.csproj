@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="beckjan.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PixiEditor.ColorPicker" Version="3.4.1" />
+    <PackageReference Include="ReactiveUI" Version="19.5.1" />
+    <PackageReference Include="ReactiveUI.Fody" Version="19.5.1" />
+    <PackageReference Include="ReactiveUI.WPF" Version="19.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="beckjan.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\beckjan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
